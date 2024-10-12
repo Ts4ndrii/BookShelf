@@ -1,115 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Моя бібліотека майбутнього — Літературний портал">
     <title>Моя бібліотека майбутнього</title>
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-dark text-white p-3">
+    <header class="bg-dark text-white">
         <nav class="navbar navbar-expand-lg navbar-dark container">
-            <a class="navbar-brand" href="#">Книжкові Артефакти</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Літературний портал</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="history.html">Книги, що змінили історію</a></li>
-                    <li class="nav-item"><a class="nav-link" href="unwritten.html">Книжки, які не були написані</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="my-library.html">Моя бібліотека майбутнього</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">Книги, що змінили історію</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unwritten.html">Книги, які не були написані</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-library.html">Моя бібліотека майбутнього</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="author.html">© Ваше Прізвище</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Main Section -->
-    <main class="container mt-5">
-        <section>
-            <h1 class="text-center mb-4">Моя бібліотека майбутнього</h1>
-            <p class="lead text-center">Уявіть собі бібліотеку, в якій книги майбутнього можуть оживати на ваших очах. Це колекція вигаданих, майбутніх та віртуальних книг, які поки що не існують, але можуть з’явитися.</p>
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-5">Моя бібліотека майбутнього</h1>
 
-            <!-- Future Library Collection -->
-            <div class="row">
-                <!-- Future Book 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Future Book 1">
-                        <div class="card-body">
-                            <h5 class="card-title">"Штучний інтелект: Мистецтво майбутнього"</h5>
-                            <p class="card-text">Ця книга досліджує, як ШІ зможе творити літературні шедеври та вплине на світ мистецтва.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Future Book 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Future Book 2">
-                        <div class="card-body">
-                            <h5 class="card-title">"Колонії на Марсі: Щоденники майбутнього"</h5>
-                            <p class="card-text">Особисті щоденники перших колоністів на Марсі, що описують виклики та можливості позаземного життя.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Future Book 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Future Book 3">
-                        <div class="card-body">
-                            <h5 class="card-title">"Бібліотека генетичного коду"</h5>
-                            <p class="card-text">Ця книга розкриває можливості створення нових видів через редагування генетичного коду та етичні наслідки цього процесу.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Future Book 4 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Future Book 4">
-                        <div class="card-body">
-                            <h5 class="card-title">"Квантові обчислення: Революція мислення"</h5>
-                            <p class="card-text">Нова ера в обчисленнях та технологіях, що відкриває нескінченні можливості у дослідженні всесвіту.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Future Book 5 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Future Book 5">
-                        <div class="card-body">
-                            <h5 class="card-title">"Цифрове безсмертя: Завантаження свідомості"</h5>
-                            <p class="card-text">Чи можливо завантажити свідомість людини у цифровий формат? Ця книга досліджує теоретичні та практичні аспекти вічного життя.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Future Book 6 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Future Book 6">
-                        <div class="card-body">
-                            <h5 class="card-title">"Паралельні всесвіти: Подорож крізь реальності"</h5>
-                            <p class="card-text">Як можна подорожувати між паралельними всесвітами та що це означає для нашого майбутнього?</p>
-                        </div>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Проект цифрової бібліотеки</h5>
+                        <p class="card-text">У майбутньому, бібліотеки будуть не лише місцем для книг, але й мультимедійними просторами для розвитку та досліджень. Ось моя уява про те, якою може стати бібліотека майбутнього — простір, де поєднуються технології та класична література.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <h2 class="text-center mb-4">Сучасні технології в бібліотеці</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/virtual-library.jpg" class="card-img-top" alt="Віртуальна реальність у бібліотеці">
+                    <div class="card-body">
+                        <h5 class="card-title">Віртуальна реальність</h5>
+                        <p class="card-text">Уявіть собі бібліотеку, де ви можете зануритися у книги через віртуальну реальність, прогулюючись по сторінках або відвідуючи місця, описані в літературі.</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/ai-library.jpg" class="card-img-top" alt="Штучний інтелект у бібліотеці">
+                    <div class="card-body">
+                        <h5 class="card-title">Штучний інтелект</h5>
+                        <p class="card-text">Штучний інтелект може допомогти знаходити книги, які відповідатимуть вашим інтересам, надавати рекомендації та створювати нові види літератури за допомогою алгоритмів.</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4">Бібліотека для всіх</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/global-library.jpg" class="card-img-top" alt="Глобальна бібліотека">
+                    <div class="card-body">
+                        <h5 class="card-title">Глобальна бібліотека</h5>
+                        <p class="card-text">Одна загальна бібліотека для всього світу, де кожен матиме доступ до знань у будь-якій точці планети. Від історичних текстів до сучасних досліджень — все доступне в один клік.</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/community-library.jpg" class="card-img-top" alt="Бібліотека для спільноти">
+                    <div class="card-body">
+                        <h5 class="card-title">Бібліотека для спільнот</h5>
+                        <p class="card-text">Бібліотеки майбутнього будуть місцем зустрічей для громад, де люди зможуть обмінюватися ідеями, досвідом та створювати нові проекти, спираючись на знання.</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <p>&copy; 2024 Забуті Книжкові Артефакти. Всі права захищено.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© Ваше Прізвище. Усі права захищені.</p>
+            <p>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS (for additional dynamic features) -->
+    <script src="script.js"></script>
 </body>
 </html>

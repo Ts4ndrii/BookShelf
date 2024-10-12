@@ -1,108 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Книги, що змінили історію — Літературний портал">
     <title>Книги, що змінили історію</title>
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-dark text-white p-3">
+    <header class="bg-dark text-white">
         <nav class="navbar navbar-expand-lg navbar-dark container">
-            <a class="navbar-brand" href="#">Книжкові Артефакти</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Літературний портал</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="history.html">Книги, що змінили історію</a></li>
-                    <li class="nav-item"><a class="nav-link" href="unwritten.html">Книжки, які не були написані</a></li>
-                    <li class="nav-item"><a class="nav-link" href="my-library.html">Моя бібліотека майбутнього</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">Книги, що змінили історію</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unwritten.html">Книги, які не були написані</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-library.html">Моя бібліотека майбутнього</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="author.html">© Ваше Прізвище</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Main Section -->
-    <main class="container mt-5">
-        <section>
-            <h1 class="text-center mb-4">Книги, що змінили історію</h1>
-            <p class="lead text-center">Ці книги не просто стали популярними — вони змінили хід історії. Від філософських трактатів до наукових відкриттів, їхній вплив відчутний і сьогодні.</p>
-            
-            <!-- Book List Section -->
-            <div class="row">
-                <!-- Book 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Книга 1">
-                        <div class="card-body">
-                            <h5 class="card-title">"Декларація незалежності" – Томас Джефферсон</h5>
-                            <p class="card-text">Цей документ став одним з ключових актів, що привели до створення Сполучених Штатів Америки та поширення демократичних ідей.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-5">Книги, що змінили історію</h1>
 
-                <!-- Book 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Книга 2">
-                        <div class="card-body">
-                            <h5 class="card-title">"Походження видів" – Чарльз Дарвін</h5>
-                            <p class="card-text">Книга, що революціонізувала наше розуміння біології та дала поштовх науковому мисленню у світі.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Book 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Книга 3">
-                        <div class="card-body">
-                            <h5 class="card-title">"Капітал" – Карл Маркс</h5>
-                            <p class="card-text">Цей трактат змінив економічну та політичну думку і мав глобальний вплив на соціальні рухи протягом ХХ століття.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Book 4 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Книга 4">
-                        <div class="card-body">
-                            <h5 class="card-title">"Магна Карта" – Король Джон Англії</h5>
-                            <p class="card-text">Цей документ заклав основу для сучасних концепцій прав людини та свободи, обмеживши владу монархії.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Book 5 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Книга 5">
-                        <div class="card-body">
-                            <h5 class="card-title">"Філософія Просвітництва" – Іммануїл Кант</h5>
-                            <p class="card-text">Великий філософський трактат, що відкрив нові горизонти для людського розуму та мислення у світі Просвітництва.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Book 6 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Книга 6">
-                        <div class="card-body">
-                            <h5 class="card-title">"Атлант розправив плечі" – Айн Ренд</h5>
-                            <p class="card-text">Цей роман став маніфестом філософії об'єктивізму та вплинув на економічну думку багатьох поколінь.</p>
-                        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/orwell-1984.jpg" class="card-img-top" alt="1984 — Джордж Орвелл">
+                    <div class="card-body">
+                        <h5 class="card-title">1984 — Джордж Орвелл</h5>
+                        <p class="card-text">Антиутопічний роман, який досліджує теми влади, тоталітаризму та контролю над масами. Ця книга вплинула на політичну та соціальну думку у всьому світі.</p>
+                        <a href="https://uk.wikipedia.org/wiki/1984_(роман)" class="btn btn-outline-primary" target="_blank">Детальніше</a>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/darwin-origin.jpg" class="card-img-top" alt="Походження видів — Чарльз Дарвін">
+                    <div class="card-body">
+                        <h5 class="card-title">Походження видів — Чарльз Дарвін</h5>
+                        <p class="card-text">Революційна праця, яка заклала основи теорії еволюції та природного відбору. Ця книга змінила розуміння біології та походження життя на Землі.</p>
+                        <a href="https://uk.wikipedia.org/wiki/Походження_видів" class="btn btn-outline-primary" target="_blank">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/marx-capital.jpg" class="card-img-top" alt="Капітал — Карл Маркс">
+                    <div class="card-body">
+                        <h5 class="card-title">Капітал — Карл Маркс</h5>
+                        <p class="card-text">Ця книга стала основою для соціалістичної та комуністичної теорії, аналізуючи капіталістичну економіку та її вплив на суспільство.</p>
+                        <a href="https://uk.wikipedia.org/wiki/Капітал" class="btn btn-outline-primary" target="_blank">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/bible.jpg" class="card-img-top" alt="Біблія">
+                    <div class="card-body">
+                        <h5 class="card-title">Біблія</h5>
+                        <p class="card-text">Найвідоміша книга у світі, яка має величезний релігійний і культурний вплив протягом тисячоліть. Вона стала основою для багатьох релігійних та моральних систем.</p>
+                        <a href="https://uk.wikipedia.org/wiki/Біблія" class="btn btn-outline-primary" target="_blank">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark 
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© Ваше Прізвище. Усі права захищені.</p>
+            <p>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS (for additional dynamic features) -->
+    <script src="script.js"></script>
+</body>
+</html>

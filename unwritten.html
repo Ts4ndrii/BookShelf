@@ -1,115 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Книжки, які не були написані</title>
+    <meta name="description" content="Книги, які не були написані — Літературний портал">
+    <title>Книги, які не були написані</title>
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-dark text-white p-3">
+    <header class="bg-dark text-white">
         <nav class="navbar navbar-expand-lg navbar-dark container">
-            <a class="navbar-brand" href="#">Книжкові Артефакти</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">Літературний портал</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="history.html">Книги, що змінили історію</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="unwritten.html">Книжки, які не були написані</a></li>
-                    <li class="nav-item"><a class="nav-link" href="my-library.html">Моя бібліотека майбутнього</a></li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">Книги, що змінили історію</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unwritten.html">Книги, які не були написані</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-library.html">Моя бібліотека майбутнього</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="author.html">© Ваше Прізвище</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Main Section -->
-    <main class="container mt-5">
-        <section>
-            <h1 class="text-center mb-4">Книжки, які не були написані</h1>
-            <p class="lead text-center">Уявіть, які шедеври могли б з’явитися, якби ці книжки були написані. Це світ нереалізованих ідей, які могли б змінити історію літератури.</p>
-            
-            <!-- Unwritten Books List -->
-            <div class="row">
-                <!-- Unwritten Book 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Unwritten Book 1">
-                        <div class="card-body">
-                            <h5 class="card-title">"Останній роман Шекспіра"</h5>
-                            <p class="card-text">Роман, якого ніколи не було, але який міг би стати продовженням великого шекспірівського спадку.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-5">Книги, які не були написані</h1>
 
-                <!-- Unwritten Book 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Unwritten Book 2">
-                        <div class="card-body">
-                            <h5 class="card-title">"Книга, яка змінила майбутнє"</h5>
-                            <p class="card-text">Науковий трактат, що міг би відкрити нові горизонти для людства, але залишився ненаписаним.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Unwritten Book 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Unwritten Book 3">
-                        <div class="card-body">
-                            <h5 class="card-title">"Роман Льва Толстого про революцію"</h5>
-                            <p class="card-text">Цей роман міг би бути продовженням "Війни і миру", але так і не був написаний.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Unwritten Book 4 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Unwritten Book 4">
-                        <div class="card-body">
-                            <h5 class="card-title">"Таємний рукопис Піфагора"</h5>
-                            <p class="card-text">Цей рукопис, за легендами, містив ключ до розуміння гармонії світу та всіх чисел.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Unwritten Book 5 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Unwritten Book 5">
-                        <div class="card-body">
-                            <h5 class="card-title">"Філософія майбутнього" – Невідомий автор</h5>
-                            <p class="card-text">Збірка філософських трактатів, що могла би змінити розуміння світу, але так і залишилася в тіні.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Unwritten Book 6 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Unwritten Book 6">
-                        <div class="card-body">
-                            <h5 class="card-title">"Десята симфонія Бетховена"</h5>
-                            <p class="card-text">Рукопис, який ніколи не був завершений, але міг стати найвеличнішим музичним твором усіх часів.</p>
-                        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/great-lost-book.jpg" class="card-img-top" alt="Загублені рукописи">
+                    <div class="card-body">
+                        <h5 class="card-title">Загублені рукописи</h5>
+                        <p class="card-text">Уявіть, скільки геніальних творів могли б змінити наше уявлення про світ, якби не були загублені або знищені. Чи могли б вони стати новою класикою?</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/never-written.jpg" class="card-img-top" alt="Невиписані ідеї">
+                    <div class="card-body">
+                        <h5 class="card-title">Невиписані ідеї</h5>
+                        <p class="card-text">Чимало письменників носили у своїй голові ідеї для книг, але так і не встигли їх написати. Якими були б ці шедеври?</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/unfinished.jpg" class="card-img-top" alt="Незавершені твори">
+                    <div class="card-body">
+                        <h5 class="card-title">Незавершені твори</h5>
+                        <p class="card-text">Деякі великі автори залишили свої твори незавершеними через різні причини. Як би ці книги вплинули на світ, якби були завершені?</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="img/famous-letters.jpg" class="card-img-top" alt="Листи, що могли стати книгами">
+                    <div class="card-body">
+                        <h5 class="card-title">Листи, що могли стати книгами</h5>
+                        <p class="card-text">Листування деяких відомих письменників настільки глибоке та змістовне, що могло б стати основою для цілих книг.</p>
+                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <p>&copy; 2024 Забуті Книжкові Артефакти. Всі права захищено.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© Ваше Прізвище. Усі права захищені.</p>
+            <p>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS (for additional dynamic features) -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,130 +1,151 @@
+/* Основні стилі для всіх сторінок */
+
 /* Загальні стилі */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
     color: #333;
-}
-
-/* Заголовок */
-header {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header .navbar-brand {
-    font-size: 1.75rem;
-    font-weight: bold;
-}
-
-header .navbar-nav .nav-link {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    padding: 0.75rem 1rem;
-}
-
-header .navbar-nav .nav-link:hover {
-    color: #ffc107;
-}
-
-/* Hero section (banner) */
-.hero-section {
-    background: url('banner-image.jpg') no-repeat center center/cover;
-    height: 70vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-section h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.hero-section p {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-}
-
-.hero-section .btn-primary {
-    background-color: #ffc107;
-    border-color: #ffc107;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.hero-section .btn-primary:hover {
-    background-color: #e0a800;
-    border-color: #d39e00;
-}
-
-/* Секція книжок */
-.books-section {
-    padding: 4rem 0;
-}
-
-.books-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #333;
-}
-
-.card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.card-text {
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 2rem 0;
-}
-
-footer p {
     margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Стили для навігаційного меню */
+.navbar {
+    background-color: #2c3e50;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Стилі для заголовків */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
 }
 
 footer a {
-    color: #ffc107;
+    color: #f39c12;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 footer a:hover {
-    color: #e0a800;
     text-decoration: underline;
 }
 
-/* Адаптивні стилі */
+/* Стилі для авторської сторінки */
+#author-photo {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопки соцмереж */
+footer i {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+footer i:hover {
+    color: #f39c12;
+}
+
+/* Стилі для контейнерів */
+.container {
+    padding: 40px 15px;
+}
+
+.container h1, .container h2, .container h3 {
+    text-align: center;
+}
+
+/* Стилі для кнопок */
+.btn-custom {
+    height: 50px;
+    width: 200px;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+.btn-custom:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Стилі для картинок */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для адаптивності */
 @media (max-width: 768px) {
-    .hero-section {
-        height: 50vh;
+    .navbar-nav .nav-link {
+        padding-left: 10px;
+        font-size: 0.9rem;
     }
 
-    .hero-section h1 {
-        font-size: 2.5rem;
+    h1 {
+        font-size: 2rem;
     }
 
-    .hero-section p {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
         font-size: 1.25rem;
     }
 }

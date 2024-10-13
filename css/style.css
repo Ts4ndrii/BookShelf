@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
 
 /*  Content
 -----------------------------------
@@ -347,8 +349,9 @@ hr {
 
 .about_start-box h2 {
     margin: 20px 0 0 0;
-    font-size: 2em;
-    font-weight: 600;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 3em;
+    font-weight: 400;
 }
 
 .about_start-lead {

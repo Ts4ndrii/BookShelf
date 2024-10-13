@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 /*  Content
 -----------------------------------
@@ -43,7 +42,7 @@ ul {
 .container {
     max-width: 1152px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 
@@ -107,19 +106,259 @@ nav {
 }
 
 /* [] Main page */
-/* [3] Bunner */
+/* [3] Welcome bunner */
 
-.hero {
+.welcome {
     background-image: url('../img/BOOKS.jpg');
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: calc(100vh - 72.8px);
+    color: #f1e1c7;
+}
+
+.welcome-backshadow {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f1e1c7;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
     text-align: center;
-    padding: 100px 0;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: #11191f 2px 2px 2px;
+}
+
+.welcome-text p {
+    margin-top: 20px;
+    font-size: 0.7em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+}
+
+.welcome-text a {
+    margin-top: 70px;
+    color: #f1e1c7;
+    font-size: 0.6em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+    padding: 10px 20px;
+    background-color: #a78d62;
+    border-bottom: 7px solid #604e31;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.welcome-text a:hover {
+    border-bottom: 5px solid #604e31;
+    margin-top: 72px;
+}
+
+.welcome-text a:focus {
+    background-color: #8c7249;
+    border-bottom: 1px solid #604e31;
+    margin-top: 76px;
+}
+
+.welcome-btn {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f1e1c7;
+    color: #11191f;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.arrows-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.arrow {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-top: 7px solid #f1e1c7;
+    border-left: 7px solid #f1e1c7;
+    border-radius: 5px;
+    transform: rotate(-135deg);
+    animation: arrow-movement 2s infinite;
+}
+
+.arrow:nth-child(1) {
+    bottom: -25px;
+    animation-delay: -0.4s;
+}
+
+.arrow:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow:nth-child(3) {
+    bottom: 25px;
+}
+
+/* Animation */
+@keyframes arrow-movement {
+    0%
+    { 
+        opacity: 0;
+        transform: rotate(-135deg) translate(-10px, -10px);
+    }
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    { 
+        opacity: 0;
+        transform: rotate(-135deg) translate(-65px, -65px);
+    }
+}
+
+/* [] Content */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.card {
+    width: 45%;
+    padding: 20px;
+    background-color: #f1e1c7;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 2em;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 1.2em;
+    margin: 15px 0;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+}
+
+.card-btn {
+    margin: 0 auto;
+    color: #f1e1c7;
+    font-size: 1.2em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+    padding: 10px 20px;
+    background-color: #a78d62;
+    border-bottom: 7px solid #604e31;
+    border-radius: 15px;
+    cursor: pointer;
+    text-shadow: #11191f 1px 1px 1px;
+}
+
+.card-btn:hover {
+    border-bottom: 5px solid #604e31;
+    margin-top: 2px;
+}
+
+.card-btn:focus {
+    background-color: #8c7249;
+    border-bottom: 1px solid #604e31;
+    margin-top: 6px;
+}
+
+
+/* [] About page */
+/* [4] About bunner */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_title {
+    font-size: 5em;
+    font-family: 'Great Vibes', cursive;
+
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+
+hr {
+    width: 100vh;
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }
+
+.about_start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.about_start img {
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.7);
+}
+
+.about_start-box {
+    width: 60%;
+    font-size: 1.5em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+    text-align: center;
+}
+
+.about_start-box h2 {
+    margin: 20px 0 0 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.about_start-lead {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.about_start-text {
+    margin-top: 20px;
+
 }
 
 /* [] Footer */

@@ -338,6 +338,25 @@ nav {
 }
 
 
+/* [] My library */
+/* []  */
+
+.library_title {
+    font-size: 5em;
+    font-family: 'Great Vibes', cursive;
+
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+
+.library_subtitle {
+    font-size: 3em;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+
 
 /* [] About page */
 /* [4] About bunner */

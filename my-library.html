@@ -6,9 +6,6 @@
     <meta name="description" content="Моя бібліотека майбутнього — Літературний портал">
     <title>Моя бібліотека майбутнього</title>
     
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
     <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     
@@ -16,7 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
 </head>
 <body>
     <!-- Header -->
@@ -47,67 +47,55 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container py-5">
-        <h1 class="text-center mb-5">Моя бібліотека майбутнього</h1>
-
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Проект цифрової бібліотеки</h5>
-                        <p class="card-text">У майбутньому, бібліотеки будуть не лише місцем для книг, але й мультимедійними просторами для розвитку та досліджень. Ось моя уява про те, якою може стати бібліотека майбутнього — простір, де поєднуються технології та класична література.</p>
+    <main class="main_library">
+        <div class="container">
+            <h1 class="library_title">Моя бібліотека майбутнього</h1>
+            <hr>
+            <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Проект цифрової бібліотеки</h5>
+                            <p class="card-text">У майбутньому, бібліотеки будуть не лише місцем для книг, але й мультимедійними просторами для розвитку та досліджень. Ось моя уява про те, якою може стати бібліотека майбутнього — простір, де поєднуються технології та класична література.</p>
+                        </div>
                     </div>
-                </div>
             </div>
-        </div>
-
-        <h2 class="text-center mb-4">Сучасні технології в бібліотеці</h2>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img src="img/virtual-library.jpg" class="card-img-top" alt="Віртуальна реальність у бібліотеці">
-                    <div class="card-body">
-                        <h5 class="card-title">Віртуальна реальність</h5>
-                        <p class="card-text">Уявіть собі бібліотеку, де ви можете зануритися у книги через віртуальну реальність, прогулюючись по сторінках або відвідуючи місця, описані в літературі.</p>
-                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+            <h2 class="library_subtitle">Сучасні технології в бібліотеці</h2>
+            <div class="row">
+                    <div class="card">
+                        <img src="img/virtual-library.jpg" class="card-img" alt="Віртуальна реальність у бібліотеці">
+                        <div class="card-body">
+                            <h5 class="card-title">Віртуальна реальність</h5>
+                            <p class="card-text">Уявіть собі бібліотеку, де ви можете зануритися у книги через віртуальну реальність, прогулюючись по сторінках або відвідуючи місця, описані в літературі.</p>
+                            <a href="#" class="card-btn">Детальніше</a>
+                        </div>
                     </div>
-                </div>
+                    <div class="card">
+                        <img src="img/ai-library.jpg" class="card-img" alt="Штучний інтелект у бібліотеці">
+                        <div class="card-body">
+                            <h5 class="card-title">Штучний інтелект</h5>
+                            <p class="card-text">Штучний інтелект може допомогти знаходити книги, які відповідатимуть вашим інтересам, надавати рекомендації та створювати нові види літератури за допомогою алгоритмів.</p>
+                            <a href="#" class="card-btn">Детальніше</a>
+                        </div>
+                    </div>
             </div>
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img src="img/ai-library.jpg" class="card-img-top" alt="Штучний інтелект у бібліотеці">
-                    <div class="card-body">
-                        <h5 class="card-title">Штучний інтелект</h5>
-                        <p class="card-text">Штучний інтелект може допомогти знаходити книги, які відповідатимуть вашим інтересам, надавати рекомендації та створювати нові види літератури за допомогою алгоритмів.</p>
-                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+            <h2 class="library_subtitle">Бібліотека для всіх</h2>
+            <div class="row">
+                    <div class="card">
+                        <img src="img/global-library.jpg" class="card-img" alt="Глобальна бібліотека">
+                        <div class="card-body">
+                            <h5 class="card-title">Глобальна бібліотека</h5>
+                            <p class="card-text">Одна загальна бібліотека для всього світу, де кожен матиме доступ до знань у будь-якій точці планети. Від історичних текстів до сучасних досліджень — все доступне в один клік.</p>
+                            <a href="#" class="card-btn">Детальніше</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="text-center mb-4">Бібліотека для всіх</h2>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img src="img/global-library.jpg" class="card-img-top" alt="Глобальна бібліотека">
-                    <div class="card-body">
-                        <h5 class="card-title">Глобальна бібліотека</h5>
-                        <p class="card-text">Одна загальна бібліотека для всього світу, де кожен матиме доступ до знань у будь-якій точці планети. Від історичних текстів до сучасних досліджень — все доступне в один клік.</p>
-                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
+                    <div class="card">
+                        <img src="img/community-library.jpg" class="card-img" alt="Бібліотека для спільноти">
+                        <div class="card-body">
+                            <h5 class="card-title">Бібліотека для спільнот</h5>
+                            <p class="card-text">Бібліотеки майбутнього будуть місцем зустрічей для громад, де люди зможуть обмінюватися ідеями, досвідом та створювати нові проекти, спираючись на знання.</p>
+                            <a href="#" class="card-btn">Детальніше</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <img src="img/community-library.jpg" class="card-img-top" alt="Бібліотека для спільноти">
-                    <div class="card-body">
-                        <h5 class="card-title">Бібліотека для спільнот</h5>
-                        <p class="card-text">Бібліотеки майбутнього будуть місцем зустрічей для громад, де люди зможуть обмінюватися ідеями, досвідом та створювати нові проекти, спираючись на знання.</p>
-                        <a href="#" class="btn btn-outline-primary">Детальніше</a>
-                    </div>
-                </div>
             </div>
         </div>
     </main>

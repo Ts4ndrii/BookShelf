@@ -248,7 +248,7 @@ nav {
     box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
 }
 
-.card img {
+.card-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -258,7 +258,6 @@ nav {
 .card-body {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
 .card-title {
@@ -297,6 +296,48 @@ nav {
     margin-top: 6px;
 }
 
+/* [] History books page */
+/* [] History title */
+.history_title {
+    font-size: 5em;
+    font-family: 'Great Vibes', cursive;
+
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+
+
+/* [] History cards */
+.history_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    min-height: 607px;
+    padding: 20px;
+    background-color: #f1e1c7;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
+}
+
+.history_card-img {
+    height: 70%;
+    width: 180px;
+    object-fit: fill;
+}
+
+.card-author {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: 550;
+}
+
+.history_card-text {
+    font-size: 1em;
+}
+
+
 
 /* [] About page */
 /* [4] About bunner */
@@ -316,10 +357,10 @@ nav {
 }
 
 hr {
-    width: 100vh;
+    width: 100%;
     border: none;
-    border-top: 3px double #333;
-    color: #333;
+    border-top: 4px double #11191f;
+    color: #11191f;
     overflow: visible;
     text-align: center;
     height: 5px;
@@ -330,7 +371,6 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 50px 0;
 }
 
 .about_start img {
@@ -348,7 +388,6 @@ hr {
 }
 
 .about_start-box h2 {
-    margin: 20px 0 0 0;
     font-family: 'Comforter Brush', cursive;
     font-size: 3em;
     font-weight: 400;
@@ -356,12 +395,20 @@ hr {
 
 .about_start-lead {
     font-size: 1em;
-    margin-top: 0;
 }
 
 .about_start-text {
-    margin-top: 20px;
+    margin-top: 60px;
+}
 
+/* [] About text */
+.about_text-title {
+    font-size: 2.5em;
+}
+
+.about_text-article {
+    margin: 20px 0;
+    font-size: 1.3em;
 }
 
 /* [] Footer */

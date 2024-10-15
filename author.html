@@ -20,6 +20,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init({
+            publicKey: 'DjD8HEIruxx5XGbKO',
+        });
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -113,18 +121,19 @@
                         <div class="about_contact-email">
                             <div class="row row_email">
                                 <div class="input-field">
-                                    <input type="name" placeholder="Your Name" spellcheck="false"/>
+                                    <input class="inputName" id="inputName" type="name" placeholder="Ім'я" spellcheck="false" required/>
                                 </div>
                                 <div class="input-field">
-                                    <input class="inputEmail" type="email" placeholder="Enter your email" spellcheck="false"/>
+                                    <input class="inputEmail" id="inputEmail" type="email" placeholder="E-mail" spellcheck="false" required/>
                                     <i class="uil uil-envelope email-icon"></i>
                                 </div>
                             </div>
                             <div class="row row_message">
                                 <div class="input-field input-message">
-                                    <input type="text" placeholder="Message" spellcheck="false"/>
+                                    <textarea class="inputMsg" id="inputMsg" rows="15" cols="25" placeholder="Повідомлення" spellcheck="false" required></textarea>
                                 </div>
                             </div>
+                            <button class="about_contact-btn" onclick="SendMail()">Відправити</button>
                         </div>
                     </div>
                 </div>

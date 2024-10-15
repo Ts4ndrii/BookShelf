@@ -565,6 +565,8 @@ hr {
 }
 input::placeholder {
     color: #747474;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+
 }
 .input-field .email-icon {
     position: absolute;
@@ -581,6 +583,50 @@ input::placeholder {
 
 .input-message {
     height: 100px;
+    padding: 5px;
+}
+
+.input-message textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    background-color: #f1e1c7;
+}
+
+textarea::placeholder {
+    color: #747474;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+}
+
+.about_contact-btn {
+    padding: 10px 20px;
+    margin: 10px auto 0;
+    background-color: #a78d62;
+    border-style: none;
+    border-radius: 15px;
+    border-bottom: 7px solid #604e31;
+    cursor: pointer;
+    text-shadow: #11191f 1px 1px 1px;
+    color: #f1e1c7;
+    font-size: 1.2em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+}
+
+.about_contact-btn:hover {
+    border-bottom: 5px solid #604e31;
+    margin-top: 12px;
+}
+
+.about_contact-btn:active {
+    background-color: #8c7249;
+    border-bottom: 1px solid #604e31;
+    margin-top: 16px;
 }
 
 /* [] Footer */

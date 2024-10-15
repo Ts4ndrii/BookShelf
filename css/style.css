@@ -669,3 +669,140 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+/* [] Adaptive */
+
+
+/* Media Queries */
+
+/* Секція для мобільних пристроїв (до 600px) */
+@media (max-width: 600px) {
+    .navbar_list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar_list li {
+        margin: 10px 0;
+    }
+
+    .welcome-text {
+        font-size: 1.8em;
+    }
+
+    .welcome-text p {
+        font-size: 0.5em;
+    }
+
+    .welcome-text a {
+        font-size: 0.5em;
+        padding: 8px 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .history_card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .about_start-box {
+        width: 100%;
+    }
+
+    .about_start img {
+        width: 100%;
+    }
+
+    .row_maps iframe {
+        width: 100%;
+    }
+
+    .input-field,
+    .input-message {
+        width: 100%;
+    }
+
+    .row_email {
+        width: 100%;
+    }
+}
+
+/* Секція для планшетів (до 900px) */
+@media (max-width: 900px) {
+    .navbar_list {
+        width: 80%;
+    }
+
+    .welcome-text {
+        font-size: 2.2em;
+    }
+
+    .welcome-text p {
+        font-size: 0.6em;
+    }
+
+    .welcome-text a {
+        font-size: 0.6em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .history_card {
+        width: 80%;
+    }
+
+    .about_start-box {
+        width: 100%;
+    }
+
+    .about_start img {
+        width: 50%;
+    }
+
+    .row_maps iframe {
+        width: 100%;
+    }
+
+    .input-field,
+    .input-message {
+        width: 80%;
+    }
+
+    .row_email {
+        width: 90%;
+    }
+}
+
+/* Секція для великих екранів (понад 1200px) */
+@media (min-width: 1200px) {
+    .navbar_list {
+        width: 60%;
+    }
+
+    .row {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .history_card {
+        width: 30%;
+    }
+}

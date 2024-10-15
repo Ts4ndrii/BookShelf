@@ -19,12 +19,19 @@ input.addEventListener("keyup", () =>{
 
 // Email form sending
 function SendMail() {
-	var params = {
-		from_name : document.getElementById("inputName").value,
-		email_id : document.getElementById("inputEmail").value,
-		message : document.getElementById("inputMsg").value
+	let pattern = /^[^ ]+@[^ ]+\.(?!ru$)[a-z]{2,3}$/;
+	email_id = document.getElementById("inputEmail").value
+	if (pattern.test(email_id)) {
+		var params = {
+			from_name : document.getElementById("inputName").value,
+			email_id : document.getElementById("inputEmail").value,
+			message : document.getElementById("inputMsg").value
+		}
+		emailjs.send("service_buzlf0w", "template_7cpkzx8", params).then(function (res) {
+			alert("Повідомлення успішно відправлено, очікуйте на відповідь.");
+		})
 	}
-	emailjs.send("service_buzlf0w", "template_7cpkzx8", params).then(function (res) {
-		alert("Повідомлення успішно відправлено, очікуйте на відповідь.");
-	})
+	else {
+		alert("Введіть коректну пошту!")
+	}
 }

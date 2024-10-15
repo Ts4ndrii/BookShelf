@@ -430,6 +430,159 @@ hr {
     font-size: 1.3em;
 }
 
+/* [] Google maps */
+.row_maps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #11191f;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.7);;
+    width: 100%;
+}
+
+.row_maps p {
+    width: 100%;
+}
+
+.row_maps iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.7);
+}
+
+/* [] About contact */
+.about_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_contact-title {
+    font-size: 2em;
+}
+
+.about_contact-text {
+    margin: 20px 0;
+    font-size: 1.3em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+}
+
+.about_contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.about_contact-wrapper .button {
+    display: flex;
+    justify-content: space-between;
+
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #f1e1c7;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+.about_contact-wrapper .button .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    color: #000;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.about_contact-wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+.about_contact-wrapper .button:nth-child(2):hover .icon {
+    background: #000;
+}
+.about_contact-wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+.about_contact-wrapper .button:nth-child(4):hover .icon {
+    background: #333;
+}
+.about_contact-wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+.about_contact-wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.about_contact-wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+/* [] Send email */
+.about_contact-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.row_email {
+    padding: 20px 0;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.input-field {
+    position: relative;
+    height: 50px;
+    width: 280px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.input-field input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    background-color: #f1e1c7;
+}
+input::placeholder {
+    color: #747474;
+}
+.input-field .email-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #747474;
+}
+
+.row_message {
+    padding: 0; 
+}
+
+.input-message {
+    height: 100px;
+}
+
 /* [] Footer */
 footer {
     background-color: #11191f;

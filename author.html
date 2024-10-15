@@ -7,10 +7,13 @@
     <title>Про автора</title>
     
     <!-- Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -71,16 +74,58 @@
                     </div>
                 </div>
 
+                <div class="row row_maps" width="80%">
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.682348544485!2d24.013190276768604!3d49.829635171480206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7cd837a2d7%3A0x2123519fbe656504!2sIvana%20Karpyntsya%20St%2C%2027%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%2079000!5e0!3m2!1sen!2sua!4v1728991205106!5m2!1sen!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+
                 <div class="row">
-                    <div class="col-md-8">
-                        <h3>Зв'яжіться зі мною</h3>
-                        <p>Ви можете зв’язатися зі мною через соцмережі або електронну пошту, і я буду радий відповісти на всі ваші запитання!</p>
-                        <p>
-                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x mr-3"></i></a>
-                            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x mr-3"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                        </p>
-                        <p>Email: <a href="mailto:author@example.com">author@example.com</a></p>
+                    <div class="about_contact">
+                        <h3 class="about_contact-title">Зв'яжіться зі мною</h3>
+                        <p class="about_contact-text">Ви можете зв’язатися зі мною через соцмережі або електронну пошту, і я буду радий відповісти на всі ваші запитання!</p>
+                        <div class="about_contact-wrapper">
+                            <a href="#" class="button">
+                               <div class="icon">
+                                  <i class="fab fa-facebook-f"></i>
+                               </div>
+                            </a>
+                            <a href="#" class="button">
+                               <div class="icon">
+                                  <i class="fab fa-x-twitter"></i>
+                               </div>
+                            </a>
+                            <a href="#" class="button">
+                               <div class="icon">
+                                  <i class="fab fa-instagram"></i>
+                               </div>
+                            </a>
+                            <a href="#" class="button">
+                               <div class="icon">
+                                  <i class="fab fa-github"></i>
+                               </div>
+                            </a>
+                            <a href="#" class="button">
+                               <div class="icon">
+                                  <i class="fab fa-youtube"></i>
+                               </div>
+                            </a>
+                        </div>
+                        <p class="about_contact-text">Форма для написання листа</p>
+                        <div class="about_contact-email">
+                            <div class="row row_email">
+                                <div class="input-field">
+                                    <input type="name" placeholder="Your Name" spellcheck="false"/>
+                                </div>
+                                <div class="input-field">
+                                    <input class="inputEmail" type="email" placeholder="Enter your email" spellcheck="false"/>
+                                    <i class="uil uil-envelope email-icon"></i>
+                                </div>
+                            </div>
+                            <div class="row row_message">
+                                <div class="input-field input-message">
+                                    <input type="text" placeholder="Message" spellcheck="false"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,6 +163,6 @@
     </footer>
 
     <!-- Custom JS (for additional dynamic features) -->
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@
     <header class="header">
         <div class="container">
             <nav class="header_nav">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     BookShelf
                 </a>
                 <div class="navbar">
@@ -53,9 +53,32 @@
                         </li>
                     </ul>
                 </div>
+                <div class="hamburger" id="menu_btn">
+                    <div class="bar"></div>
+                </div>
             </nav>
         </div>
     </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile_nav">
+        <div class="m_navbar">
+            <ul class="m_navbar_list">
+                <li class="m_navbar_list-item">
+                    <a class="m_navbar_list-link" href="index.html">Головна</a>
+                </li>
+                <li class="m_navbar_list-item">
+                    <a class="m_navbar_list-link" href="history.html">Історія</a>
+                </li>
+                <li class="m_navbar_list-item">
+                    <a class="m_navbar_list-link" href="my-library.html">Майбутнє</a>
+                </li>
+                <li class="m_navbar_list-item">
+                    <a class="m_navbar_list-link" href="author.html">Автор</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main class="main">
@@ -117,6 +140,12 @@
                                </div>
                             </a>
                         </div>
+                        <!--
+                        <div class="video_box">
+                            <video src="video/"></video>
+                            <i class=""></i>
+                        </div>
+                        -->
                         <p class="about_contact-text">Форма для написання листа</p>
                         <div class="about_contact-email">
                             <div class="row row_email">
@@ -173,5 +202,7 @@
 
     <!-- Custom JS (for additional dynamic features) -->
     <script src="script/script.js"></script>
+    <script src="script/hamburger.js"></script>
+
 </body>
 </html>

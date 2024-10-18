@@ -35,3 +35,11 @@ function SendMail() {
 		alert("Введіть коректну пошту!")
 	}
 }
+
+//Video toggle
+const video = document.querySelector(".video_box");
+const videoBtn = document.querySelector(".video_btn");
+
+videoBtn.addEventListener("click", function () {
+	video.classList.toggle("is-active");
+})

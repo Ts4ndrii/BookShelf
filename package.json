@@ -1,0 +1,29 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "BookShelf — це вебсайт-візитка та цифрова бібліотека, створена для презентації найвпливовіших літературних творів світу, а також для демонстрації власної книжкової колекції автора.",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "vitest utils.test.js",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ts4ndrii/BookShelf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ts4ndrii/BookShelf/issues"
+  },
+  "homepage": "https://github.com/Ts4ndrii/BookShelf#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@vitest/coverage-v8": "^4.0.18",
+    "jsdom": "^28.1.0",
+    "vitest": "^4.0.18"
+  }
+}

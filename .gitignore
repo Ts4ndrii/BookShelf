@@ -1,1 +1,7 @@
 Сміття.txt
+
+node_modules/
+
+coverage/
+playwright-report/
+test-results/

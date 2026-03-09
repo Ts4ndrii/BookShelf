@@ -1,32 +1,44 @@
+# Назва нашого пайплайну, яка буде відображатися в GitHub Actions
+name: CI/CD Pipeline
+
+# Тригери: коли саме має запускатися автоматизація
 on:
   push:
     branches: [ "main", "develop" ]
   pull_request:
     branches: [ "main", "develop" ]
 
-name: CI/CD Pipeline
-
+# Завдання, які потрібно виконати
 jobs:
   build-and-test:
     name: Build and Test
+    # Віртуальна машина, на якій все буде запускатися
     runs-on: ubuntu-latest
+
+    # Послідовні кроки виконання
     steps:
+      # Крок 1: Завантаження твого коду з репозиторію на віртуальну машину
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Крок 2: Встановлення середовища Node.js (версії 20)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # Крок 3: Встановлення всіх залежностей (Vite, ESLint, Playwright тощо)
       - name: Install dependencies
         run: npm install
 
+      # Крок 4: Перевірка коду лінтером (шукає синтаксичні помилки та зайві змінні)
       - name: Run linter
         run: npm run lint
 
+      # Крок 5: Запуск модульних тестів (перевірка бізнес-логіки)
       - name: Run unit tests
         run: npm run test:unit
 
+      # Крок 6: Фінальна збірка проєкту (створення папки dist/)
       - name: Build for production
         run: npm run build

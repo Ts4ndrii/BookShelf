@@ -11,7 +11,7 @@ export async function submitForm(email, message, emailApiService) {
     try {
         await emailApiService.send(email, message);
         return { success: true };
-    } catch (error) {
+    } catch {
         return { success: false, error: "API Error" };
     }
 }

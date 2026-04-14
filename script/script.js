@@ -48,7 +48,6 @@ videoBtn.addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", () => {
     const statusElement = document.getElementById("app-status");
     if (statusElement) {
-        // Vite підставляє значення з .env під час збірки або запуску
         statusElement.textContent = `Статус: ${import.meta.env.VITE_APP_STATUS}`;
     }
 });

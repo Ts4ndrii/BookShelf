@@ -7,8 +7,8 @@
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "lint": "eslint script/utils.js",
-        "test:unit": "vitest utils.test.js",
+        "lint": "eslint test/utils.js",
+        "test:unit": "vitest test/utils.test.js",
         "test:coverage": "vitest run --coverage",
         "test:e2e": "playwright test"
     },

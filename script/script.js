@@ -1,3 +1,10 @@
+import posthog from 'posthog-js'
+
+posthog.init('phc_ygQvS6fEFPqTHqTef3okYXxPsUoJFYXbVcVf5ELqarSf', {
+    api_host: 'https://eu.i.posthog.com',
+    defaults: '2026-01-30'
+})
+
 // Email check
 const input = document.querySelector(".inputEmail"),
 emailIcon = document.querySelector(".email-icon")
@@ -30,12 +37,19 @@ function SendMail() {
 		}
 		emailjs.send("service_buzlf0w", "template_7cpkzx8", params).then(function () {
 			alert("Повідомлення успішно відправлено, очікуйте на відповідь.");
+
+			posthog.capture('message_sent', {
+                category: 'contact_form',
+                priority: 'high',
+                has_name: params.from_name !== "" // Перевіряємо, чи ввів користувач ім'я
+            });
 		})
 	}
 	else {
 		alert("Введіть коректну пошту!")
 	}
 }
+window.SendMail = SendMail;
 
 //Video toggle
 const video = document.querySelector(".video_box");
@@ -43,11 +57,28 @@ const videoBtn = document.querySelector(".video_btn");
 
 videoBtn.addEventListener("click", function () {
 	video.classList.toggle("is-active");
+
+	posthog.capture('video_toggled', {
+            category: 'engagement',
+            is_active: video.classList.contains("is-active") // передаємо статус: відкрили чи закрили
+        });
 })
 
 document.addEventListener("DOMContentLoaded", () => {
     const statusElement = document.getElementById("app-status");
     if (statusElement) {
         statusElement.textContent = `Статус: ${import.meta.env.VITE_APP_STATUS}`;
+    }
+});
+
+posthog.onFeatureFlags(() => {
+    const videoBtn = document.querySelector(".video_btn");
+    
+    if (videoBtn) {
+        if (posthog.isFeatureEnabled('show-video-feature')) {
+            videoBtn.style.display = 'block';
+        } else {
+            videoBtn.style.display = 'none';
+        }
     }
 });

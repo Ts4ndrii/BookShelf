@@ -1,5 +1,5 @@
 # 📚 BookShelf — Книги, що змінили історію
-[![CI tests](https://github.com/Ts4ndrii/BookShelf/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Ts4ndrii/BookShelf/actions/workflows/ci-cd.yml)
+[![CI/CD Pipeline](https://github.com/Ts4ndrii/BookShelf/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Ts4ndrii/BookShelf/actions/workflows/ci-cd.yml)
 
 BookShelf — це вебсайт-візитка та цифрова бібліотека, створена для презентації найвпливовіших літературних творів світу, а також для демонстрації власної книжкової колекції автора.
 

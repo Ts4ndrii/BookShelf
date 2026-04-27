@@ -11,6 +11,37 @@
 -----------------------------------
 */
 
+/*
+    TEST STYLES
+*/
+button {
+    border: none;
+}
+
+#break-btn {
+    margin-top: 70px;
+    color: #f1e1c7;
+    font-size: 0.6em;
+    font-family: 'LXGW WenKai Mono TC', monospace;
+    padding: 10px 20px;
+    background-color: red;
+    border-bottom: 7px solid #972c2c;                            
+    border-radius: 15px;                            
+    cursor: pointer;                                                        
+}
+
+#break-btn:hover {
+    border-bottom: 5px solid #972c2c;
+    margin-top: 72px;
+}
+
+#break-btn:focus {
+    background-color: red;
+    border-bottom: 1px solid #972c2c;
+    margin-top: 76px;
+}
+
+
 
 /* [1] Genral styles */
 *{

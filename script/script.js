@@ -102,9 +102,6 @@ posthog.onFeatureFlags(() => {
 });
 
 // Test button to trigger an error for Sentry
-const breakBtn = document.getElementById("break-btn");
-if (breakBtn) {
-    breakBtn.addEventListener("click", () => {
-        throw new Error("Sentry Test Error: Something went wrong!"); 
-    });
+function breakWorld() {
+	throw new Error("Sentry Test Error: Something went wrong!");
 }

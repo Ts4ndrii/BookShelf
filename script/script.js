@@ -1,4 +1,22 @@
 import posthog from 'posthog-js'
+import * as Sentry from "@sentry/browser";
+
+Sentry.init({
+  	dsn: "https://2b966455ebaf1f03c5e0c6f5ef67287b@o4511290805846016.ingest.de.sentry.io/4511290808205392",
+  	integrations: [
+		Sentry.browserTracingIntegration(),
+		Sentry.replayIntegration(),
+	],
+	// Tracing: Записувати 100% транзакцій для моніторингу продуктивності.
+	// У продакшені рекомендується зменшити це значення (наприклад, до 0.1), щоб зберегти ресурси.
+	tracesSampleRate: 1.0,
+
+	replaysOnErrorSampleRate: 1.0, // Записувати всі сесії, які призводять до помилок
+	replaysSessionSampleRate: 0.1, // Записувати 10% всіх сесій для загального моніторингу
+
+	environment: "development", // Змініть на "production" при релізі
+  sendDefaultPii: true
+});
 
 posthog.init('phc_ygQvS6fEFPqTHqTef3okYXxPsUoJFYXbVcVf5ELqarSf', {
     api_host: 'https://eu.i.posthog.com',
@@ -82,3 +100,11 @@ posthog.onFeatureFlags(() => {
         }
     }
 });
+
+// Test button to trigger an error for Sentry
+const breakBtn = document.getElementById("break-btn");
+if (breakBtn) {
+    breakBtn.addEventListener("click", () => {
+        throw new Error("Sentry Test Error: Something went wrong!"); 
+    });
+}

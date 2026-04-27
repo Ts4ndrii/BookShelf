@@ -1,5 +1,3 @@
-import posthog from "posthog-js";
-
 // Hamburger menu
 const menu_btn = document.querySelector(".hamburger");
 const menu = document.querySelector(".mobile_nav");

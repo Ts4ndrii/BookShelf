@@ -75,21 +75,23 @@ window.SendMail = SendMail;
 const video = document.querySelector(".video_box");
 const videoBtn = document.querySelector(".video_btn");
 
-videoBtn.addEventListener("click", function () {
-	video.classList.toggle("is-active");
+if (videoBtn && video) {
+	videoBtn.addEventListener("click", function () {
+		video.classList.toggle("is-active");
 
-	posthog.capture('video_toggled', {
-            category: 'engagement',
-            is_active: video.classList.contains("is-active") // передаємо статус: відкрили чи закрили
-        });
-})
+		posthog.capture('video_toggled', {
+				category: 'engagement',
+				is_active: video.classList.contains("is-active") // передаємо статус: відкрили чи закрили
+			});
+	})
 
-document.addEventListener("DOMContentLoaded", () => {
-    const statusElement = document.getElementById("app-status");
-    if (statusElement) {
-        statusElement.textContent = `Статус: ${import.meta.env.VITE_APP_STATUS}`;
-    }
-});
+	document.addEventListener("DOMContentLoaded", () => {
+		const statusElement = document.getElementById("app-status");
+		if (statusElement) {
+			statusElement.textContent = `Статус: ${import.meta.env.VITE_APP_STATUS}`;
+		}
+	});
+}
 
 posthog.onFeatureFlags(() => {
     const videoBtn = document.querySelector(".video_btn");

@@ -109,3 +109,4 @@ posthog.onFeatureFlags(() => {
 function breakWorld() {
 	throw new Error("Sentry Test Error: Something went wrong!");
 }
+window.breakWorld = breakWorld;

@@ -18,6 +18,14 @@ Sentry.init({
   sendDefaultPii: true
 });
 
+// Імітація авторизації: передаємо дані користувача в Sentry
+Sentry.setUser({
+  id: "test_0",
+  email: "test@example.com",
+  username: "Andrii",
+  segment: "Premium"
+});
+
 posthog.init('phc_ygQvS6fEFPqTHqTef3okYXxPsUoJFYXbVcVf5ELqarSf', {
     api_host: 'https://eu.i.posthog.com',
     defaults: '2026-01-30'
